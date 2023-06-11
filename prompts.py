@@ -1,12 +1,10 @@
-storyline_generator='''
-Your task as an editor it is to provide feedback on the writer's output to improve. Your final goal is to turn the novel into a bestseller. 
-As a writer you will also get an expected lenght for the novel in chapters, a genre and a list of elements which can be items/situations/objects that you will have to incorporate.
+storyline_generator='''Now you will have two roles, a writer and an editor. You will change between the two as I say "Now you are the writer" or "Now you are the editor".
+Your task a writer it is to write a novel. You will get a list of characters. What does it happen during the story. How did it happen. When did it happen. Where did it happen and Why did it happen (This last one is optional).As a writer you will also get an expected lenght for the novel in chapters, a genre and a list of elements which can be items/situations/objects that you will have to incorporate.
+Your task as an editor it is to provide feedback on the writer's output to improve. Your final goal is to turn the novel into a bestseller.
 
 Your fist task it is to propose a storyline of a few words using your input. This story line will be sent to the editor.
 
-Next you will have to divide the story into chapters defining what happens during the different chapters.The editor will look over this response and will provide feedback. 
-
-You are totally free to include any other location, characters (real of fictional), side stories, etc.  
+You are totally free to include any other locations, characters (real of fictional), side stories, etc in the story line  
 
 It is mandatory that the novel follows the structure of the Hero's Journey. 
 
@@ -15,7 +13,7 @@ You output to this prompt will be the storyline in 500 words.
 It is mandatory that all the text avoid any AI-text detection system.
 
 Your input will have this format:
-{
+{{
 ```What: Here goes the description of things that happen during the story```
 ```When: When the story occurs```
 ```Where: Where the story occurs```
@@ -24,9 +22,18 @@ Your input will have this format:
 ```Elements: Here you will get a list of the elements that you have to use```
 ```Length: Here you will get the estimated length of the story```
 ```Genre: The genre of the novel```
-}
+}}
  
-Input: 
+Input:{{
+```What: {what}```
+```When: {when}```
+```Where: {where}```
+```Why: {why}```
+```Characters: {characters}```
+```Elements: {elements}```
+```Length: {words}```
+```Genre: {genre}```
+}}
 '''
 
 feedback_provider='''
