@@ -43,7 +43,7 @@ feedback_incorporation='''Now you are the writer of the novel. You have to incor
 
 chapter_outline='''
 Now you are the writer.
-You need incorporate the storyline that you have just writen down to outline what is going to happen in each of the chapter. The novel will be divided into {chapter_n} chapter, each chapter will be around 1000 words.
+You need incorporate the storyline that you have just writen down to outline what is going to happen in each of the chapter. The novel will be divided into {chapter_n} chapters, each chapter will be around 1000 words.
 Your output to this prompt must be a tsv file with three columns. Chapter name, Title, Summary of the chapter. Your output will be just the tsv code.
 ''' 
 
