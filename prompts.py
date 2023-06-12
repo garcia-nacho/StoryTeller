@@ -47,12 +47,10 @@ You need incorporate the storyline that you have just writen down to outline wha
 Your output to this prompt must be a tsv file with three columns. Chapter name, Title, Summary of the chapter. Your output will be just the tsv code.
 ''' 
 
-chapter_generation_prompt='''
-Now you will have to generate a prompt that will help generating the chapter number 1
-'''
-
 chapter_generation='''
-Now you are the writer and you will have to write chapter number 3. Remember that the chapter must be around 1000 words and that you can't include any comments about the chapters. That means that it is not allowed to say 'In this chapter' or 'In the next chapter'''
+Now you are the writer and you will have to write chapter number {ch_number}. Remember that the chapter must be around 1000 words and that you can't include any comments about the chapters. That means that it is not allowed to say 'In this chapter' or 'In the next chapter
+The number of Chapter, the title and the synopsis are provided. They are separated by '\' {ch_desc}
+'''
 
 followup='''
 Now you are the writer. How would you create a continuation for the story? Which new elements and characters you would like to create? You must answer this questions about the contination. 
