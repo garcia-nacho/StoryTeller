@@ -49,7 +49,7 @@ Your output to this prompt must be a tsv file with three columns. Chapter name, 
 
 chapter_generation='''
 Now you are the writer and you will have to write chapter number {ch_number}. Remember that the chapter must be around 1000 words and that you can't include any comments about the chapters. That means that it is not allowed to say 'In this chapter' or 'In the next chapter
-The number of Chapter, the title and the synopsis are provided. They are separated by slash symbols {ch_desc}
+The number of Chapter, the title and the synopsis are provided. They are separated by slash symbols: ``` {ch_desc} ```
 '''
 
 followup='''
