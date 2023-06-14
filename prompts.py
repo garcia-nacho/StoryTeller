@@ -47,9 +47,8 @@ You need incorporate the storyline that you have just writen down to outline wha
 Your output to this prompt must be a tsv file with three columns. Chapter name, Title, Summary of the chapter. Your output will be just the tsv code.
 ''' 
 
-chapter_generation='''
-Now you are the writer and you will have to write chapter number {ch_number}. Remember that the chapter must be around 1000 words and that you can't include any comments about the chapters. That means that it is not allowed to say 'In this chapter' or 'In the next chapter
-The number of Chapter, the title and the synopsis are provided. They are separated by slash symbols: ``` {ch_desc} ```
+chapter_generation='''Now you are the writer and you will have to write chapter number {ch_number}. Remember that the chapter must be around 1000 words and that you can't include any comments about the chapters. That means that it is not allowed to say 'In this chapter' or 'In the next chapter
+The number of chapter, the title and the synopsis are provided between curly brackets. The number of chater, title and synopsis are separated by slash symbols: {{ {ch_desc} }}'''
 '''
 
 followup='''
@@ -77,3 +76,5 @@ The description must be detailed enough so that it can be created without includ
 '''
 
 tsv_chapter_generation='''Now you need to provide the chapters in a tsv format with three columns. Chapter name, Title, Summary of the chapter. Your output will be just that. The tsv file'''
+
+chapter_appendix='''You need to take into account your previous response about the status of the story and the characters. '''
