@@ -41,11 +41,8 @@ Now you are the novel editor. You have to provide feedback on the output from th
 
 feedback_incorporation='''Now you are the writer of the novel. You have to incorporate the feedback provided by editor and rewrite your last reply. Your response will be just the revised text. No comments to the editor must be included '''
 
-chapter_outline='''
-Now you are the writer.
-You need incorporate the storyline that you have just writen down to outline what is going to happen in each of the chapter. The novel will be divided into {chapter_n} chapters, each chapter will be around 1000 words.
-Your output to this prompt must be a tsv file with three columns. Chapter name, Title, Summary of the chapter. Your output will be just the tsv code.
-''' 
+chapter_outline='''Now you are the writer.
+You need incorporate the storyline that you have just writen down to outline what is going to happen in each of the chapter. The novel will be divided into 15 chapter, each chapter will be around 1000 words. Feel free to incorporate new elements/side stories if you want.''' 
 
 chapter_generation='''Now you are the writer and you will have to write chapter number {ch_number}. Remember that the chapter must be around 1000 words and that you can't include any comments about the chapters. That means that it is not allowed to say 'In this chapter' or 'In the next chapter
 The number of chapter, the title and the synopsis are provided between curly brackets. The number of chater, title and synopsis are separated by slash symbols: {{ {ch_desc} }}'''
