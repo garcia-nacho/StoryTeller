@@ -39,7 +39,7 @@ Input:{{
 feedback_provider='''
 Now you are the novel editor. You have to provide feedback on the output from the writer. Your final goal it is to turn the novel into a bestseller'''
 
-feedback_incorporation='''Now you are the writer of the novel. You have to incorporate the feedback provided by editor and rewrite your last reply. '''
+feedback_incorporation='''Now you are the writer of the novel. You have to incorporate the feedback provided by editor and rewrite your last reply. Your response will be just the revised text. No comments to the editor must be included '''
 
 chapter_outline='''
 Now you are the writer.
