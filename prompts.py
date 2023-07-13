@@ -69,7 +69,7 @@ Background: What did it happen in previous stories
 
 The description must be detailed enough so that it can be created without including the previous novel as context in the prompt. 
 
-{
+{{
 "What":"What will it happen during the continuation.",
 "When":"When will it happen",
 "Where":"Where is the contination happening"
@@ -77,9 +77,9 @@ The description must be detailed enough so that it can be created without includ
 "Characters": "Here go the characters to be included in the next part",
 "Elements":"Here go the elements that must be included separated by commas",
 "Background":"Here go the background for the new story"
-}
+}}
 '''
 
 tsv_chapter_generation='''Now you need to provide the chapters in a tsv format with three columns. Chapter name, Title, Summary of the chapter. Your output will be just that. The tsv file'''
 
-chapter_appendix='''You need to take into account your previous response about the status of the story and the characters. '''
+chapter_appendix='''You need to take into account your previous response about the status of the story and the characters.'''
