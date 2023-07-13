@@ -52,9 +52,9 @@ Feel free to incorporate new elements/side stories if you want. The description 
 Your output to this prompt must be a tsv file with three columns: Chapter name, Title, Summary of the chapter. Your output will be just the tsv.
 ''' 
 
-chapter_generation='''Now you are the writer and you will have to write chapter number {{ch_number}}. Remember that the chapter must be around 1000 words and that you can't include any comments about the chapters. That means that it is not allowed to say 'In this chapter' or 'In the next chapter
-The number of chapter, the title and the synopsis are provided between curly brackets. The number of chater, title and synopsis are separated by slash symbols: {{ch_desc}}'''
-'''
+#chapter_generation='''Now you are the writer and you will have to write chapter number {{ch_number}}. Remember that the chapter must be around 1000 words and that you can't include any comments about the chapters. That means that it is not allowed to say 'In this chapter' or 'In the next chapter
+#The number of chapter, the title and the synopsis are provided between curly brackets. The number of chater, title and synopsis are separated by slash symbols: {{ch_desc}}'''
+#'''
 
 followup='''
 Now you are the writer. How would you create a continuation for the story? Which new elements and characters you would like to create? You must answer this questions about the contination. 
